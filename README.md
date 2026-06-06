@@ -5,6 +5,7 @@
 
   ## Running the code
 
+  Run `npm install -g pnpm@9`
   Run `pnpm install` to install the dependencies.
 
   Run `pnpm dev` to start the development server.
