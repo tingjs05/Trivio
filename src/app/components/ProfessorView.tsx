@@ -196,7 +196,7 @@ export default function ProfessorView() {
       <div className="size-full flex items-center justify-center bg-gradient-to-br from-sky-200 to-indigo-300">
         <div className="bg-white rounded-2xl p-8 shadow-xl max-w-md w-full mx-4">
           <div className="flex justify-center mb-6">
-            <img src={trivioLogo} alt="Trivio" className="h-[100px]" />
+            <img src={trivioLogo} alt="Trivio" className="h-[200px]" />
           </div>
           <h2 className="text-3xl mb-6 text-center">Professor Login</h2>
           <form
@@ -358,6 +358,7 @@ export default function ProfessorView() {
                   <Presentation className="w-6 h-6 text-indigo-600" />
                   Lecture Slides
                 </h2>
+                <br/>
                 <div className="flex items-center gap-2">
                   <button
                     onClick={handlePrevSlide}
@@ -458,7 +459,7 @@ export default function ProfessorView() {
           {/* Leaderboard */}
           <div className="bg-white rounded-xl p-6 shadow-lg">
             <h2 className="text-xl mb-4">Student Leaderboard ({students.length})</h2>
-            <div className="space-y-2 max-h-[900px] overflow-y-auto pr-2">
+            <div className="space-y-2 max-h-[1100px] overflow-y-auto pr-2">
               {students
                 .slice()
                 .sort((a, b) => b.points - a.points)

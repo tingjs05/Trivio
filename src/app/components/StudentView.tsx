@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router";
 import {
-  Trophy, Star, Sparkles, Gift, Gem, Crown,
+  Trophy, Star, Sparkles, Gift, Gem, Crown, Presentation, 
   UserCircle, ShoppingBag, BookOpen, Hash, LogOut, Settings, User, ChevronLeft,
 } from "lucide-react";
 import confetti from "canvas-confetti";
@@ -212,7 +212,7 @@ export default function StudentView() {
       <div className="size-full flex items-center justify-center bg-gradient-to-br from-sky-200 to-indigo-300">
         <div className="bg-white rounded-2xl p-8 shadow-xl max-w-md w-full mx-4">
           <div className="flex justify-center mb-6">
-            <img src={trivioLogo} alt="Trivio" className="h-[100px]" />
+            <img src={trivioLogo} alt="Trivio" className="h-[200px]" />
           </div>
           <h2 className="text-3xl mb-6 text-center">Student Login</h2>
           <form
@@ -557,7 +557,11 @@ export default function StudentView() {
         {/* Left: slide + stacked recaps */}
         <div className="lg:col-span-2 space-y-4">
           <div className="bg-white rounded-xl shadow-lg p-4">
-            <h2 className="text-lg mb-3 text-gray-700">Lecture Slide</h2>
+            <h2 className="text-xl flex items-center gap-2">
+              <Presentation className="w-6 h-6 text-indigo-600" />
+              Lecture Slides
+            </h2>
+            <br/>
             <div
               className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg text-white p-6"
               style={{ aspectRatio: "16/9" }}

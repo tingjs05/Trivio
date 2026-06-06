@@ -10,10 +10,10 @@ export default function Home() {
       <div className="max-w-2xl w-full px-8">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6">
-            <img src={trivioLogo} alt="Trivio" className="h-[350px] flex items-center justify-center text-center"/>
+            <img src={trivioLogo} alt="Trivio" className="h-[300px] flex items-center justify-center text-center"/>
           </div>
           <p className="text-xl text-gray-600">
-            Stay engaged in class and earn rewards by catching trinkets!
+            Stay engaged in class and earn rewards by catching pulses!
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export default function Home() {
               </div>
               <h2 className="text-2xl">Student</h2>
               <p className="text-gray-600 text-center">
-                Join the class and start catching trinkets to earn points
+                Join the class and start catching pulses to earn points
               </p>
             </div>
           </button>
@@ -43,7 +43,7 @@ export default function Home() {
               </div>
               <h2 className="text-2xl">Professor</h2>
               <p className="text-gray-600 text-center">
-                Launch trinkets and track student engagement
+                Launch pulses and track student engagement
               </p>
             </div>
           </button>

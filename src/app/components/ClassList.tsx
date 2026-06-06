@@ -143,7 +143,7 @@ export default function ClassList({
               <TrivioTitle/>
             </div>
             <div className="flex items-center gap-4">
-              <h1 className="text-3xl">My Classes</h1>
+              <div className="text-3xl">My Classes</div>
               <ProfileMenu name={username} onSignOut={onSignOut} />
             </div>
           </div>
