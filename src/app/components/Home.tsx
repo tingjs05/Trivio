@@ -10,7 +10,7 @@ export default function Home() {
       <div className="max-w-2xl w-full px-8">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6">
-            <img src={trivioLogo} alt="Trivio" className="h-[300px] flex items-center justify-center text-center"/>
+            <img src={trivioLogo} alt="Trivio" className="h-64 md:h-80 lg:h-[400px] flex items-center justify-center text-center"/>
           </div>
           <p className="text-xl text-gray-600">
             Stay engaged in class and earn rewards by catching pulses!

@@ -33,12 +33,48 @@ interface MissedRecap {
 }
 
 const SHOP_ITEMS = [
-  { id: 1, name: "Homework Pass", description: "Skip one homework assignment", cost: 100, icon: "📝" },
-  { id: 2, name: "Extra Credit", description: "+5% on your next quiz", cost: 75, icon: "⭐" },
-  { id: 3, name: "Custom Avatar", description: "Unlock a unique avatar", cost: 50, icon: "🎨" },
-  { id: 4, name: "Points Boost", description: "2x points for 10 minutes", cost: 30, icon: "⚡" },
-  { id: 5, name: "Seat Upgrade", description: "Choose your seat for a week", cost: 150, icon: "💺" },
-  { id: 6, name: "Late Pass", description: "Be 10 minutes late once", cost: 80, icon: "⏰" },
+  {
+    id: 1,
+    name: "Assignment Extension",
+    description: "Extend one assignment deadline by 3 days",
+    cost: 1200,
+    icon: "📄",
+  },
+  {
+    id: 2,
+    name: "Quiz Boost",
+    description: "+5% bonus on your next quiz or test",
+    cost: 75,
+    icon: "📈",
+  },
+  {
+    id: 3,
+    name: "Custom Profile Badge",
+    description: "Unlock a unique student profile badge",
+    cost: 50,
+    icon: "🎖️",
+  },
+  { 
+    id: 4, 
+    name: "Custom Avatar", 
+    description: "Unlock a unique avatar", 
+    cost: 50, 
+    icon: "🎨" 
+  },
+  {
+    id: 5,
+    name: "Preferred Tutorial Slot",
+    description: "Choose your tutorial/lab timing once",
+    cost: 150,
+    icon: "🗓️",
+  },
+  {
+    id: 6,
+    name: "Late Submission Token",
+    description: "Submit one assignment up to 24 hours late",
+    cost: 80,
+    icon: "⏳",
+  },
 ];
 
 const RECENT_CLASSES = [
