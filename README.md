@@ -1,7 +1,7 @@
 # Trivio: Turning Classroom Attention into Achievement
 [![Trivio Demo Video](https://github.com/user-attachments/assets/beee6195-496f-4b4e-a7cd-570e0cf50475)](https://www.youtube.com/watch?v=_4knGQsI2m8)
-<img width="49.75%" src="https://github.com/user-attachments/assets/1b9a304b-492c-4891-a771-8a34688ad52d" />
-<img width="49.75%" src="https://github.com/user-attachments/assets/fe7ffd65-f10d-4dc9-91bd-3f6e15cf7bdd" />
+<img width="49.7%" src="https://github.com/user-attachments/assets/1b9a304b-492c-4891-a771-8a34688ad52d" />
+<img width="49.7%" src="https://github.com/user-attachments/assets/fe7ffd65-f10d-4dc9-91bd-3f6e15cf7bdd" />
 
 ## Overview
 This is a prototype that started on Figma and was later moved to Github for further development. 
