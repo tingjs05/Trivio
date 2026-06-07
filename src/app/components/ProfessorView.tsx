@@ -261,7 +261,7 @@ export default function ProfessorView() {
   const slide = SLIDES[currentSlide];
 
   return (
-    <div className="size-full bg-gradient-to-br from-sky-200 to-indigo-300 overflow-auto">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-sky-200 to-indigo-300">
       {/* Header */}
       <div className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
@@ -299,7 +299,7 @@ export default function ProfessorView() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto p-6">
+      <div className="flex-1 max-w-7xl mx-auto w-full p-6 flex flex-col">
         {/* Stats */}
         <div className="grid md:grid-cols-3 gap-6 mb-6">
           <div className="bg-white rounded-xl p-6 shadow-lg">
@@ -325,8 +325,8 @@ export default function ProfessorView() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2 space-y-6">
+        <div className="grid lg:grid-cols-3 gap-6 flex-1 min-h-0">
+          <div className="lg:col-span-2 flex flex-col gap-6 min-h-0">
 
             {/* Join code banner — Kahoot-style, always visible */}
             <div className="bg-indigo-900 text-white rounded-xl px-6 py-4 flex items-center justify-between shadow-lg">
@@ -393,7 +393,7 @@ export default function ProfessorView() {
             </div>
 
             {/* Launch pulse */}
-            <div className="bg-white rounded-xl p-6 shadow-lg">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex flex-col h-full">
               <h2 className="text-xl mb-1">Launch a Pulse</h2>
               <p className="text-sm text-gray-500 mb-4">
                 Select a challenge for <strong>{slide.title}</strong> and send it to students.
@@ -447,7 +447,7 @@ export default function ProfessorView() {
                   Start the lecture first to send pulses
                 </p>
               )}
-              <div className="mt-3 px-4 py-2.5 bg-gray-50 rounded-lg">
+              <div className="mt-auto px-4 py-2.5 bg-gray-50 rounded-lg">
                 <p className="text-sm text-gray-600">
                   <span className="text-gray-400">Pulses sent this session: </span>
                   <strong>{totalTrinketsLaunched}</strong>
@@ -457,9 +457,9 @@ export default function ProfessorView() {
           </div>
 
           {/* Leaderboard */}
-          <div className="bg-white rounded-xl p-6 shadow-lg">
+          <div className="bg-white rounded-xl p-6 shadow-lg flex flex-col h-full">
             <h2 className="text-xl mb-4">Student Leaderboard ({students.length})</h2>
-            <div className="space-y-2 max-h-[1100px] overflow-y-auto pr-2">
+            <div className="space-y-2 max-h-[1100px] flex-1 overflow-y-auto pr-2">
               {students
                 .slice()
                 .sort((a, b) => b.points - a.points)
