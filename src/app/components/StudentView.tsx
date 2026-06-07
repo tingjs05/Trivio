@@ -413,7 +413,11 @@ export default function StudentView() {
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
+              <button
+              onClick={() => setView("dashboard")}
+            >
               <TrivioTitle />
+            </button>
             </div>
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-lg px-3 py-1.5">
@@ -478,12 +482,10 @@ export default function StudentView() {
       <div className="size-full bg-gradient-to-br from-sky-200 to-indigo-300 overflow-auto">
         <div className="bg-white shadow-sm">
           <div className="max-w-3xl mx-auto px-6 py-3 flex items-center justify-between">
-            <TrivioTitle />
             <button
               onClick={() => setView("dashboard")}
-              className="text-sm text-gray-500 hover:text-gray-800 transition-colors"
             >
-              Back to Dashboard →
+              <TrivioTitle />
             </button>
           </div>
         </div>

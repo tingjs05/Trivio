@@ -272,7 +272,11 @@ export default function ProfessorView() {
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
-            <TrivioTitle />
+            <button
+              onClick={() => setSelectedClass(null)}
+            >
+              <TrivioTitle />
+            </button>
             <div className="w-px h-6 bg-gray-200" />
             <div>
               <p className="text-lg leading-tight">{selectedClass.name}</p>
